@@ -43,7 +43,26 @@ input {
   padding: 0 1.6rem;
 }
 
-input, button, .button {
-    width: 100%;
-    margin-bottom: 1.8rem;
+input,
+button,
+.button {
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator hr {
+  width: 100%;
+  background: var(--grey-blue);
+  height: .1rem;
+  margin: 0 1.5rem;
+}
+
+.separator span {
+  color: var(--grey-blue);
 }
