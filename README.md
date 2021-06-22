@@ -2,7 +2,7 @@
 
 ## :scroll: Sobre
 
-Central de Perguntas Anônimas
+Central de Perguntas Anônimas.
 
 ---
 
