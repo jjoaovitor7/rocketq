@@ -85,3 +85,49 @@
     padding: .8rem 2.4rem;
     line-height: 2.4rem;
 }
+
+#questions .questions .question-wrapper {
+    margin: .8rem 0;
+    background-color: var(--light-blue);
+    padding: 2.4rem 0 6rem 2.4rem;
+    position: relative;
+}
+
+#questions .questions .question-wrapper .question-content {
+    display: flex;
+    align-items: center;
+}
+
+#questions .questions .question-wrapper .question-content .user {
+    margin-right: 1.6rem;
+}
+
+#questions .questions .question-wrapper .actions {
+    display: flex;
+    position: absolute;
+    right: 3.2rem;
+    bottom: 2.4rem;
+}
+
+#questions .questions .question-wrapper .actions .check {
+    display: flex;
+    align-items: center;
+    margin-right: 2.4rem;
+}
+
+#questions .questions .question-wrapper .actions .check img {
+    margin-right: .8rem;
+}
+
+#questions .questions .question-wrapper .actions .delete {
+    display: flex;
+    align-items: center;
+}
+
+#questions .questions .question-wrapper .actions .delete img {
+    margin-right: .8rem;
+}
+
+#questions .questions .question-wrapper .actions a {
+    color: var(--grey-dark);
+}
