@@ -91,11 +91,16 @@
     background-color: var(--light-blue);
     padding: 2.4rem 0 6rem 2.4rem;
     position: relative;
+    border-radius: .8rem;
 }
 
 #questions .questions .question-wrapper .question-content {
     display: flex;
     align-items: center;
+    max-width: 95%;
+    text-align: justify;
+    word-wrap: break-word;
+    font-family: "Open Sans", sans-serif;
 }
 
 #questions .questions .question-wrapper .question-content .user {
@@ -130,4 +135,8 @@
 
 #questions .questions .question-wrapper .actions a {
     color: var(--grey-dark);
+}
+
+#questions .questions .question-wrapper.read {
+    filter: grayscale(1);
 }
