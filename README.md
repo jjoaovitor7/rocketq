@@ -11,7 +11,7 @@
 - JS
 - NodeJS
 - EJS
-- Sqlite3 (Banco de Dados)
+- MySQL/MariaDB (Banco de Dados)
 
 ---
 
