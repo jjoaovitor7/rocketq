@@ -25,6 +25,11 @@
   $ cd rocketq
 
   // Criar o Banco de Dados
+  $ mysql -u <user> -p
+  MariaDB [(none)]> CREATE DATABASE IF NOT EXISTS <database_name>;
+  MariaDB [(none)]> exit
+
+  // Criar as tabelas no Banco de Dados
   $ node src/db/init.js
 
   // Iniciar o servidor

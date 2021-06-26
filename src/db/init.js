@@ -1,21 +1,37 @@
 const db = require("./config");
 
-const initDb = {
-    init() {
-        db.exec(`CREATE TABLE IF NOT EXISTS rooms (
-            id INTEGER PRIMARY KEY,
-            pass TEXT
-        );`);
+db.connect(function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    db.query(
+      "CREATE TABLE IF NOT EXISTS rooms (r_id INTEGER PRIMARY KEY, r_pass TEXT);",
+      function (err, data) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log('Tabela "rooms" criada ou já existe no Banco de Dados.');
+        }
+      }
+    );
 
-        db.exec(`CREATE TABLE IF NOT EXISTS questions (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            title TEXT,
-            read INT,
-            room INT
-        );`);
+    db.query(
+      "CREATE TABLE IF NOT EXISTS questions (q_id INTEGER PRIMARY KEY AUTO_INCREMENT, q_title TEXT, q_read INTEGER, q_room INTEGER);",
+      function (err, data) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log(
+            'Tabela "questions" criada ou já existe no Banco de Dados.'
+          );
+        }
+      }
+    );
 
-        db.close();
-    },
-};
-
-initDb.init();
+    db.end(function (err) {
+      if (err) {
+        console.log(err);
+      }
+    });
+  }
+});

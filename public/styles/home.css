@@ -1,90 +1,90 @@
 .content {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 11.4rem 1fr;
-    grid-template-areas: "header header" "left right";
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+  grid-template-areas: "header header" "left right";
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 #bg {
-    grid-area: left;
-    background: url("../assets/home-bg-img.svg") no-repeat top/contain;
-    /* contain, encaixar no tamanho da div que a mesma está */
-    /* cover, preencher todo espaço, podendo cortar a imagem */
-    background-position-x: -10rem;
+  grid-area: left;
+  background: url("../assets/home-bg-img.svg") no-repeat top/contain;
+  /* contain, encaixar no tamanho da div que a mesma está */
+  /* cover, preencher todo espaço, podendo cortar a imagem */
+  background-position-x: -10rem;
 }
 
 main {
-    grid-area: right;
-    display: flex;
-    align-items: center;
-    margin-top: -12rem;
+  grid-area: right;
+  display: flex;
+  align-items: center;
+  margin-top: -12rem;
 }
 
 main .container {
-    width: min(36.3rem, 100%);
+  width: min(36.3rem, 100%);
 }
 
 main h2 {
-    font-family: "Poppins", sans-serif;
-    color: var(--black);
-    font-size: clamp(20px, 5vw, 2.8rem);
-    margin-bottom: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: clamp(20px, 5vw, 2.8rem);
+  margin-bottom: 2.4rem;
 }
 
 input {
-    border: 0.2rem solid var(--grey-blue);
-    padding: 0 1.6rem;
-    outline: none;
+  border: 0.2rem solid var(--grey-blue);
+  padding: 0 1.6rem;
+  outline: none;
 }
 
 input,
 button,
 .button {
-    width: 100%;
-    margin-bottom: 1.8rem;
+  width: 100%;
+  margin-bottom: 1.8rem;
 }
 
 .separator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
 }
 
 .separator hr {
-    width: 100%;
-    background: var(--grey-blue);
-    height: .1rem;
-    margin: 0 1.5rem;
+  width: 100%;
+  background: var(--grey-blue);
+  height: 0.1rem;
+  margin: 0 1.5rem;
 }
 
 .separator span {
-    color: var(--grey-blue);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+  color: var(--grey-blue);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .ball {
-    width: 21.2rem;
-    height: 21.2rem;
-    background: var(--grey-blue);
-    position: fixed;
-    clip-path: circle();
-    opacity: 0.15;
+  width: 21.2rem;
+  height: 21.2rem;
+  background: var(--grey-blue);
+  position: fixed;
+  clip-path: circle();
+  opacity: 0.15;
 }
 
 .ball.top {
-    top: -46rem;
-    right: -35rem;
-    width: 63.3rem;
-    height: 63.3rem;
+  top: -46rem;
+  right: -35rem;
+  width: 63.3rem;
+  height: 63.3rem;
 }
 
 .ball.bottom {
-    bottom: -15rem;
-    right: 5.6rem;
+  bottom: -15rem;
+  right: 5.6rem;
 }

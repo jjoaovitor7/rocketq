@@ -1,2 +1,9 @@
-const sqlite3 = require("sqlite3");
-module.exports = new sqlite3.Database("./src/db/rocketq.sqlite");
+require("dotenv").config({ path: __dirname.concat("/.env") });
+const mysql = require("mysql");
+
+module.exports = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+});
