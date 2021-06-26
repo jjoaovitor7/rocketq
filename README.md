@@ -1,10 +1,8 @@
-# Rocket.Q
-
 <div align="center">
+  <h2>Rocket.Q</h2>
   <img src="./screenshots/final-1.png">
   <p>Central de Perguntas Anônimas.</p>
 </div>
----
 
 ## :rocket: Tecnologias utilizadas
 
