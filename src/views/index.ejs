@@ -30,21 +30,23 @@
 
         <main>
             <div class="container">
-                <section>
-                    <h2>Crie sua própria sala</h2>
-                    <form action="">
-                        <label class="sr-only" for="room_pass">Insira uma senha</label>
-                        <input type="password" id="room_pass" placeholder="Insira uma senha" />
-                        <button>
-                            <img src="./assets/users-white.svg" alt="Criar Sala" />
-                            Criar Sala
-                        </button>
-                    </form>
-                </section>
+                <%- include(`parts/${page}`) %>
             </div>
         </main>
     </div>
 
+    <!-- <script type="text/javascript">
+        if (document.getElementById("room_id") != null) {
+            document.getElementById("room_id").addEventListener("change", function() {
+                document
+                    .getElementById("form-enterRoom")
+                    .setAttribute(
+                        "action",
+                        `/room/${document.getElementById("room_id").value}`
+                    );
+            });
+        }
+    </script> -->
 </body>
 
 </html>

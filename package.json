@@ -1,0 +1,28 @@
+{
+    "name": "rocketq",
+    "version": "1.0.0",
+    "description": "Trilha Discover.",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "nodemon .",
+        "init-db": "node src/db/init.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jjoaovitor7/rocketq.git"
+    },
+    "author": "jjoaovitor7",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jjoaovitor7/rocketq/issues"
+    },
+    "homepage": "https://github.com/jjoaovitor7/rocketq#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "sqlite3": "^5.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}

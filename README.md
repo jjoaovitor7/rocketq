@@ -1,19 +1,23 @@
 # Rocket.Q
 
-## :scroll: Sobre
-
-Central de Perguntas Anônimas.
-
+<div align="center">
+  <img src="./screenshots/final-1.png">
+  <p>Central de Perguntas Anônimas.</p>
+</div>
 ---
 
 ## :rocket: Tecnologias utilizadas
 
 - HTML
 - CSS
+- JS
+- NodeJS
+- EJS
+- Sqlite3 (Banco de Dados)
 
 ---
 
-## :computer: Como baixar o projeto
+## :computer: Como baixar o projeto e iniciar o projeto
 
 ```bash
   // Clonar o repositório
@@ -21,6 +25,12 @@ Central de Perguntas Anônimas.
 
   // Entrar no diretório
   $ cd rocketq
+
+  // Criar o Banco de Dados
+  $ node src/db/init.js
+
+  // Iniciar o servidor
+  $ node src/server.js
 ```
 
 ---
