@@ -6,6 +6,8 @@
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   grid-area: header;
 }
 
@@ -21,7 +23,7 @@ main {
   grid-area: right;
   display: flex;
   align-items: center;
-  margin-top: -12rem;
+  margin-top: -5rem;
 }
 
 main .container {

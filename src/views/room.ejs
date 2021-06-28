@@ -28,15 +28,19 @@
                 <img src="../assets/logo.svg" alt="Rocket.Q Logo" />
             </a>
             <div class="buttons">
-                <div class="button outlined" id="room_id" data-id="<%= roomId %>" onclick="copyRoomURL();">
+                <div class="button outlined noDarkMode" id="room_id" data-id="<%= roomId %>" onclick="copyRoomURL();">
                     #
                     <%= roomId %>
-                        <img src="../assets/copy.svg" alt="Copiar a URL da sala" />
+                        <img src="../assets/copy.svg" alt="Copiar a URL da sala" class="noDarkMode" />
                 </div>
 
-                <a href="/create-pass" class="button">
-                    <img src="../assets/users-white.svg" alt="Criar uma sala" /> Criar Sala
+                <a href="/create-pass" class="button noDarkMode">
+                    <img src="../assets/users-white.svg" alt="Criar uma sala" class="noDarkMode" /> Criar Sala
                 </a>
+
+                <div id="slider" class="noDarkMode">
+                    <span class="noDarkMode"></span>
+                </div>
             </div>
         </header>
 
@@ -48,10 +52,10 @@
                     <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
 
                     <footer>
-                        <div>
-                            <img src="../assets/lock.svg" alt="Cadeado" /> Esta pergunta é anônima
+                        <div class="noDarkMode">
+                            <img src="../assets/lock.svg" alt="Cadeado" class="noDarkMode" /> Esta pergunta é anônima
                         </div>
-                        <button>Enviar</button>
+                        <button class="noDarkMode">Enviar</button>
                     </footer>
                 </form>
             </section>
@@ -62,23 +66,23 @@
                         <% } %>
 
                             <% questions.forEach(question=> { %>
-                                <div class="question-wrapper">
-                                    <div class="question-content">
-                                        <div class="user">
-                                            <img src="../assets/avatar.svg" alt="Avatar">
+                                <div class="question-wrapper noDarkMode">
+                                    <div class="question-content noDarkMode">
+                                        <div class="user noDarkMode">
+                                            <img src="../assets/avatar.svg" alt="Avatar" class="noDarkMode">
                                         </div>
-                                        <div class="question">
-                                            <p>
+                                        <div class="question noDarkMode">
+                                            <p class="noDarkMode">
                                                 <%= question.q_title %>
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="actions">
-                                        <a href="#" class="check" data-id="<%= question.q_id %>">
-                                            <img src="../assets/check.svg" alt="Marcar como lida"> Marcar como lida
+                                    <div class="actions noDarkMode">
+                                        <a href="#" class="check noDarkMode" data-id="<%= question.q_id %>">
+                                            <img src="../assets/check.svg" alt="Marcar como lida" class="noDarkMode"> Marcar como lida
                                         </a>
-                                        <a href="#" class="delete" data-id="<%= question.q_id %>">
-                                            <img src="../assets/trash.svg" alt="Excluir"> Excluir
+                                        <a href="#" class="delete noDarkMode" data-id="<%= question.q_id %>">
+                                            <img src="../assets/trash.svg" alt="Excluir" class="noDarkMode"> Excluir
                                         </a>
                                     </div>
                                 </div>
@@ -107,17 +111,17 @@
         </main>
     </div>
 
-    <div class="modal-wrapper">
+    <div class="modal-wrapper noDarkMode">
         <div class="modal">
-            <h2>Excluir pergunta</h2>
-            <p>Tem certeza que você deseja excluir esta pergunta?</p>
-            <form action="#" method="POST">
+            <h2 class="noDarkMode">Excluir pergunta</h2>
+            <p class="noDarkMode">Tem certeza que você deseja excluir esta pergunta?</p>
+            <form action="#" method="POST" class="noDarkMode">
                 <label class="sr-only" for="password">Digite sua senha admin</label>
                 <input type="password" name="password" id="password" placeholder="Digite sua senha admin">
 
-                <div class="buttons">
-                    <div class="button grey cancel">Cancelar</div>
-                    <button class="red">Sim, excluir</button>
+                <div class="buttons noDarkMode">
+                    <div class="button grey cancel noDarkMode">Cancelar</div>
+                    <button class="red noDarkMode">Sim, excluir</button>
                 </div>
             </form>
         </div>
@@ -137,6 +141,9 @@
             document.body.removeChild(elem);
         }
     </script>
+
+    <script src="/scripts/darkmode.js"></script>
+
 </body>
 
 </html>

@@ -117,3 +117,24 @@ button.grey,
 .content header img {
   width: 16.7rem;
 }
+
+#slider {
+  position: relative;
+  background: var(--grey-dark);
+  width: 8rem;
+  height: 2.2rem;
+  border-radius: 2.5rem;
+  z-index: 1;
+}
+#slider span {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.5rem;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.21) 0 0 0.5rem 0.1rem;
+}

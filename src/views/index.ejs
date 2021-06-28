@@ -17,15 +17,18 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="noDarkMode">
     <div id="home" class="content">
         <header>
-            <img src="assets/logo.svg" alt="Rocket.Q Logo" />
+            <img src="assets/logo.svg" alt="Rocket.Q Logo" class="noDarkMode" />
+            <div id="slider" class="noDarkMode">
+                <span class="noDarkMode"></span>
+            </div>
         </header>
 
         <div id="bg">
-            <div class="ball top"></div>
-            <div class="ball bottom"></div>
+            <div class="ball top noDarkMode"></div>
+            <div class="ball bottom noDarkMode"></div>
         </div>
 
         <main>
@@ -35,6 +38,7 @@
         </main>
     </div>
 
+    <script src="/scripts/darkmode.js"></script>
 </body>
 
 </html>
